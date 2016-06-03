@@ -5,3 +5,8 @@ machine:
 dependencies:
   override:
    - npm install
+deployment:
+   production:
+     branch: master
+     commands:
+     	- ./deploy_prod.sh
