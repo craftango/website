@@ -1,0 +1,8 @@
+machine:
+  node:
+      version: 0.11.8
+checkout:
+
+dependencies:
+  override:
+   - npm install
