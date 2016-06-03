@@ -1,2 +1,2 @@
 #!/bin/ssh
-scp * craftango@domainak.com:/home/craftango/www/;
+#scp * craftango@domainak.com:/home/craftango/www/;
