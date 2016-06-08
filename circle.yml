@@ -13,6 +13,7 @@ test:
   post:
   - cf api https://api.run.pivotal.io
   - cf auth $CFUSERNAME $CFPASSWORD
+  - cf target -o $CFUSERNAME -s development
   - cf a
 
 deployment:
