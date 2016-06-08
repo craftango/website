@@ -1,7 +1,6 @@
 machine:
   node:
-  version: 0.11.8
-
+     version: 0.11.8
 dependencies:
   pre:
     - curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
