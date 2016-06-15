@@ -18,6 +18,6 @@ deployment:
     production:
       branch: master
       commands:
-	- cf target -o craftango -s development
-	- cf a
-	- cf push
+        - cf target -o craftango -s development
+        - cf a
+        - cf push
