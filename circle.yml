@@ -10,13 +10,14 @@ dependencies:
     - npm install
 test: 
   post:
+    - cf -v
     - cf api https://api.run.pivotal.io
     - cf auth $CFUSERNAME $CFPASSWORD
-    - cf target -o craftango -s development
-    - cf a
 
 deployment:
     production:
       branch: master
       commands:
-        - cf push
+	- cf target -o craftango -s development
+	- cf a
+	- cf push
