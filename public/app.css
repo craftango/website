@@ -1,0 +1,25 @@
+.stepimg{
+    width: 50px;
+}
+
+.step{
+    text-align: center;
+}
+
+.mainarea{
+    border:black solid thin;
+    padding: 10px;
+    border-radius: 15px;
+    /*text-align: center;*/
+}
+
+.cookieplaceholderimg{
+    
+    width: 400px;
+
+}
+
+.cookieplaceholder {
+    
+    text-align: center;
+}
