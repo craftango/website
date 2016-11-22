@@ -40,7 +40,7 @@
                         <input type="hidden" name="cmd" value="_xclick">
                         <input type="hidden" name="business" value="custom@craftango.com">
                         <input type="hidden" name="lc" value="US">
-                        <input type="hidden" name="item_name" value="Thanksgiving Cookies">
+                        <input type="hidden" id="item_name" name="item_name" value="Thanksgiving Cookies">
                         <input type="hidden" name="button_subtype" value="services">
                         <input type="hidden" name="no_note" value="0">
                         <input type="hidden" name="currency_code" value="USD">
@@ -112,8 +112,11 @@
 
 
             <script type="text/javascript">
+                
+                var photoId=getParameterByName('photoId');
 
-                document.getElementById("imageid").src = "images/thanksgiving/tg" + getParameterByName('photoId') + ".png";
+                document.getElementById("imageid").src = "images/thanksgiving/tg" + photoId + ".png";
+                document.getElementById("item_name").value = "Thanksgiving Cookies #"+photoId;
 
 
                 function getParameterByName(name, url) {
